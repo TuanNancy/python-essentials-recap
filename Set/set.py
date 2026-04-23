@@ -18,3 +18,18 @@ if 2 in s:
 
 
 ##Các phép toán tập hợp (quan trọng)
+A = {1, 2, 3, 4, 5}
+B = {3, 4, 5, 6, 7}
+print(A | B)
+print(A.union(B))
+print(A & B)
+print(A.intersection(B))
+print(A - B)
+print(A.difference(B))
+print(B - A)
+print(B.difference(A))
+print(A ^ B)
+print(A.symmetric_difference(B))
+print(B ^ A)
+print(B.symmetric_difference(A))
+
