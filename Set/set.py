@@ -20,14 +20,19 @@ if 2 in s:
 ##Các phép toán tập hợp (quan trọng)
 A = {1, 2, 3, 4, 5}
 B = {3, 4, 5, 6, 7}
+# Hợp (union) – phần tử thuộc A hoặc B
 print(A | B)
 print(A.union(B))
 print(A & B)
+# Giao (intersection) – phần tử thuộc cả A và B
 print(A.intersection(B))
+# Hiệu (difference) – phần tử thuộc A nhưng không thuộc B
 print(A - B)
 print(A.difference(B))
+# Hiệu (difference) – phần tử thuộc B nhưng không thuộc A
 print(B - A)
 print(B.difference(A))
+# Phần bù (symmetric difference) – phần tử thuộc A hoặc B nhưng không thuộc cả hai
 print(A ^ B)
 print(A.symmetric_difference(B))
 print(B ^ A)
