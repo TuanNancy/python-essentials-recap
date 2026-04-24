@@ -33,3 +33,12 @@ print(A.symmetric_difference(B))
 print(B ^ A)
 print(B.symmetric_difference(A))
 
+# Bình phương các số chẵn từ 0-9
+squares = {x**2 for x in range(10) if x % 2 == 0}   # {0, 64, 4, 36, 16}
+# Lưu ý: set không có thứ tự nên in ra có thể không sắp xếp.
+
+
+my_list= [1, 2, 2, 3, 4, 4, 5]
+my_set = set(my_list)
+print(my_set)
+
