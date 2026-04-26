@@ -73,3 +73,27 @@ for s in sorted_students:
 numbers = [1, 2, 3, 4, 5, 6]
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
 print(even_numbers)
+
+
+# --- FILTER ---
+# Cũ (lambda)
+even = list(filter(lambda x: x % 2 == 0, numbers))
+
+# Mới (comprehension)
+even = [x for x in numbers if x % 2 == 0]
+
+
+# --- MAP ---
+# Cũ (lambda)
+squares = list(map(lambda x: x ** 2, numbers))
+
+# Mới (comprehension)
+squares = [x ** 2 for x in numbers]
+
+
+# --- MAP + FILTER kết hợp ---
+# Cũ (lambda) — bắt đầu rối
+result = list(map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, numbers)))
+
+# Mới (comprehension) 
+result = [x ** 2 for x in numbers if x % 2 == 0]
