@@ -1,4 +1,6 @@
 from audioop import avg
+from math import e
+import numbers
 
 
 def greet():
@@ -47,3 +49,27 @@ def stats(numbers):
 
 min_val, max_val, total = stats([1, 2, 3, 4, 5])
 print(min_val, max_val, total)
+
+
+#lamda là hàm ẩn danh, thường dùng cho các hàm đơn giản, ngắn gọn.
+
+students = [("John", 85), ("Jane", 92), ("Doe", 78)]
+students_sorted = sorted(students, key=lambda x: x[1])
+
+students_box =[
+    {"name": "An", "score": 85},
+    {"name": "Tuan", "score": 92},
+    {"name": "Binh", "score": 78}
+]
+
+sorted_students = sorted(students_box, key=lambda x: x["score"])
+
+for s in sorted_students:
+    print(f"{s['name']}: {s['score']}")
+
+
+#filter
+
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)
